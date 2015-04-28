@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+      		
+   <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Upload Profile "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#B45F04"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+   <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" 
+        android:gravity="center">
+   </LinearLayout>
+
+	   <LinearLayout
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_above="@+id/ll1"
+	       android:layout_alignParentLeft="true"
+	       android:layout_margin="1dp"
+	       android:layout_marginBottom="58dp"
+	       android:orientation="horizontal" >
+
+	       <TextView
+	           android:layout_width="85dp"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center_vertical"
+	           android:layout_marginRight="10dp"
+	           android:gravity="center_vertical"
+	           android:text="Profile Photo"
+	           android:textColor="#B45F04"
+	           android:textSize="16sp"
+	           android:textStyle="bold" />
+
+	       <Button
+	           android:id="@+id/btnUpload"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:text="Upload" />
+
+	       <TextView
+	           android:id="@+id/tvPhotoURL"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:hint="Photo URL"
+	           android:textColor="#B45F04" />
+	   </LinearLayout>
+
+   </RelativeLayout>

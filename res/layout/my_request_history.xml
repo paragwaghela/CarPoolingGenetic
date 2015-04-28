@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_myAccount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	<LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:padding="7dp" >
+             <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ReuqestId::"
+                android:textColor="#B45F04"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+		    <TextView
+		        android:id="@+id/tvHReqId"
+		        android:layout_width="188dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="5dp"
+		        android:text="ReuqestId"
+		        android:textColor="#B45F04" />
+
+	</LinearLayout>
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:padding="7dp" >
+   			 <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Source::"
+                 android:textColor="#B45F04"
+                 android:layout_marginTop="5dp"
+                 android:textStyle="bold"/>
+
+			 <TextView
+			     android:id="@+id/tvHSource"
+			     android:layout_width="189dp"
+			     android:layout_height="wrap_content"
+			     android:layout_marginLeft="5dp"
+			     android:layout_marginRight="5dp"
+			     android:layout_marginTop="5dp"
+			     android:text="Source"
+			     android:textColor="#B45F04" />
+
+    </LinearLayout>
+	<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:padding="7dp" >
+		<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Destination::"
+            android:textColor="#B45F04"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+	    <TextView
+	        android:id="@+id/tvHDestination"
+	        android:layout_width="183dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="Destination"
+	        android:textColor="#B45F04" />
+
+    </LinearLayout>
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:padding="7dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pick Up Time::"
+            android:textColor="#B45F04"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+	    <TextView
+	        android:id="@+id/tvHPickUpTime"
+	        android:layout_width="184dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="PickUpTime"
+	        android:textColor="#B45F04" />
+
+    </LinearLayout>
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:padding="7dp" >
+		<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status::"
+            android:textColor="#B45F04"
+            
+            android:textStyle="bold"/>
+
+	   <TextView
+	       android:id="@+id/tvHStatus"
+	       android:layout_width="183dp"
+	       android:layout_height="wrap_content"
+	       android:layout_margin="5dp"
+	       android:layout_marginLeft="5dp"
+	       android:layout_marginRight="5dp"
+	       android:text="Status"
+	       android:textColor="#B45F04" />
+
+	</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

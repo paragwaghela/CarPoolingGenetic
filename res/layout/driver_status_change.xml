@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Driver Status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#B45F04"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:padding="7dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Change status"
+            android:textColor="#B45F04"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/switchToggle"
+            android:layout_width="121dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dip"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/toggletoswitch" />
+        
+        
+
+    </LinearLayout>
+
+  <!-- <ToggleButton
+      android:id="@+id/switchToggle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/linearLayout1"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="31dp"
+      android:textOff="Disable"
+      android:textOn="Enable" />
+ -->
+
+ 	<LinearLayout
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignLeft="@+id/txtTitle"
+ 	    android:layout_below="@+id/linearLayout1"
+ 	    android:layout_marginTop="28dp" >
+
+ 	    <Button
+ 	        android:id="@+id/btnChangeStatus"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_margin="5dp"
+ 	        android:background="@drawable/blue_rounded_rectangle"
+ 	        android:text="Change"
+ 	        android:textColor="@android:color/white"
+ 	        android:textSize="16sp"
+ 	        android:textStyle="bold" />
+
+ 	    <Button
+ 	        android:id="@+id/btnCancel"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_margin="5dp"
+ 	        android:background="@drawable/blue_rounded_rectangle"
+ 	        android:text="Cancel"
+ 	        android:textColor="@android:color/white"
+ 	        android:textSize="16sp"
+ 	        android:textStyle="bold" />
+ 	</LinearLayout>
+
+</RelativeLayout>

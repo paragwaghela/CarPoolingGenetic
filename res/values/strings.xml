@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Genetic Car Pooling</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_make_request">MakeRequest</string>
+    <string name="title_activity_edit_passanger_profile">EditPassangerProfile</string>
+    <string name="title_activity_passanger_profile">PassangerProfile</string>
+    <string name="title_activity_update_profile_pic">updateProfilePic</string>
+    <string name="my_profile">My Profile</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+    <string name="aadhar_id">Aadhar Id</string>
+    <string name="name">Name</string>
+    <string name="eMail">E-Mail</string>
+    <string name="contactNumber">Contact Number</string>
+    <string name="title_activity_passanger_notification">PassangerNotification</string>
+    <string name="title_activity_driver_notification">DriverNotification</string>
+    <string name="title_activity_driver_req_list">DriverReqList</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="title_activity_feed_baack">FeedBaack</string>
+    <string name="title_activity_passanger_req_detail">passangerReqDetail</string>
+    <string name="title_activity_driver_req_detail">DriverReqDetail</string>
+    <string name="title_activity_driver_comment">DriverComment</string>
+    <string name="title_activity_host_ip_adress">HostIpAdress</string>
+    <string name="title_activity_driver_status_change">DriverStatusChange</string>
+
+</resources>

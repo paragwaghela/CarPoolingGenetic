@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carpool"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <permission
+        android:name="com.carpool.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.carpool.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.carpool.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.carpool.permission.C2D_MESSAGE" />
+
+    <!-- receives GCM messages -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM requires a Google account -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+
+    <!-- wake the processor if a GCM message is received -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme" >
+        <activity
+            android:name="com.carpool.SplashScreen"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".HostIpAdress"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.carpool.Login" />
+        <activity android:name="com.carpool.Register" />
+        <activity android:name="com.carpool.ForgetPassword" />
+        <activity android:name="com.carpool.UserHome" />
+        <activity android:name="com.carpool.MyProfile" />
+        <activity android:name="com.carpool.EditProfile" />
+        <activity android:name="com.carpool.MyCar" />
+        <activity android:name="com.carpool.AddNewCar" />
+        <activity android:name="com.carpool.EditCar" />
+        <activity android:name="com.carpool.EmergencyContactList" />
+        <activity android:name="com.carpool.EmergencyContactDetails" />
+        <activity android:name="com.carpool.ChangePassword" />
+        <activity android:name=".choose_registration" />
+        <activity android:name=".Registration_passanger" />
+        <activity android:name=".MyCarInfo" />
+        <activity android:name=".MyRequestHistory" />
+        <activity android:name=".MakeRequest" />
+        <activity android:name=".EditPassangerProfile" />
+        <activity android:name=".PassengerProfile" />
+        <activity android:name=".updateProfilePic" />
+        <activity android:name=".PassangerNotification" />
+        <activity android:name="com.carpool.DriverNotification" />
+        <activity android:name=".DriverReqList" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.carpool" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAySjqkIZs-7G0LHLONiTj_kWXaDxllarM" />
+
+        <activity
+            android:name=".FeedBack"
+            android:label="@string/title_activity_feed_baack" >
+        </activity>
+        <activity
+            android:name=".passangerReqDetail"
+            android:label="@string/title_activity_passanger_req_detail" >
+		</activity>
+        <activity
+            android:name=".DriverReqDetail"
+            android:label="@string/title_activity_driver_req_detail" >
+
+        </activity>
+        <activity
+            android:name=".DriverComplaint"
+            android:label="@string/title_activity_driver_comment" >
+
+        </activity>
+        <activity
+            android:name=".DriverStatusChange"
+            android:label="@string/title_activity_driver_status_change" >
+            
+        </activity>
+    </application>
+
+</manifest>
