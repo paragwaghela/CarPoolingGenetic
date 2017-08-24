@@ -33,7 +33,8 @@ import android.widget.Toast;
 public class updateProfilePic extends BaseActivity {
 
 	private static String TAG="UploadProfilePic";
-	String selected_file_name=null;		
+	String testing="testing";
+	String selected_file_name=null;
 	private Bitmap bitmap;
 	String message = "",responseBody="";
     HttpResponse response = null;
