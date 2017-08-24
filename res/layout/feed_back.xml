@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context=".Login" >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Feed Back"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#B45F04"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:padding="7dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Conmfot score"
+            android:textColor="#B45F04"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+       
+        <!-- <Spinner
+            android:id="@+id/spComfortscore"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:textColor="#B45F04" /> -->
+    </LinearLayout>
+
+	 <LinearLayout
+	     android:id="@+id/linearLayout2"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentLeft="true"
+	     android:layout_below="@+id/linearLayout1"
+	     android:gravity="center"
+	     android:padding="10dp" >
+
+       <RatingBar  
+        android:id="@+id/ratingBar1"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+       />  
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Over all score"
+            android:textColor="#B45F04"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- <Spinner
+            android:id="@+id/spOverAllScore"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:textColor="#B45F04" /> -->
+    </LinearLayout>
+    <LinearLayout
+	     android:id="@+id/linearLayout4"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentLeft="true"
+	     android:layout_below="@+id/linearLayout3"
+	     android:gravity="center"
+	     android:padding="10dp" >
+
+       <RatingBar  
+        android:id="@+id/ratingBar2"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+         />  
+    </LinearLayout>
+     <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout4"
+        android:background="@drawable/blue_rounded_rectangle"
+        android:text="Send"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
